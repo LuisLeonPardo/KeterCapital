@@ -3,7 +3,7 @@ import Navbar from "./NavBar.jsx";
 
 export default function Landing() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="bg-[#FAFAFA] h-screen">
       <Navbar />
       <h1>Home</h1>
       <h1>Investments</h1>
