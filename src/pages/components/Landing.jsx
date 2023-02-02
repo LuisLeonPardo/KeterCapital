@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./NavBar.jsx";
+import Navbar from "./NavBar/NavBar";
 import Home from "./Home.jsx";
 
 export default function Landing() {
@@ -11,6 +11,5 @@ export default function Landing() {
       <h1>Catches</h1>
       <h1>Footer</h1>
     </main>
-
   );
 }
