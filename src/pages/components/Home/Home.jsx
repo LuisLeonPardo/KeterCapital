@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import image from "./assets/menIsSuits.svg";
+import image from "../assets/menInSuits.svg";
 
 export default function Home() {
   return (
