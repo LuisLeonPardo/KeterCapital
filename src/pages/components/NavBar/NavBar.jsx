@@ -17,7 +17,7 @@ export default function NavBar() {
       <nav
         className={`${
           open && "bg-[#FAFAFA]"
-        } absolute h-24 w-full sm:w-10/12 lg:w-7/12 flex items-center justify-around sm:justify-around lg:justify-between z-10`}
+        } sm:bg-[#FAFAFA] fixed h-24 w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl flex items-center justify-around sm:justify-around lg:justify-between z-10`}
       >
         <Image src={logo} alt="Keter Capital logo" priority />
         <ul className="hidden sm:flex justify-between gap-x-10">

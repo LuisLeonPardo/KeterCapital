@@ -6,7 +6,6 @@ import Catches from "./Catches";
 import FooterDesktop from "./Footer/FooterDesktop";
 import FooterMobile from "./Footer/FooterMobile";
 
-
 export default function Landing() {
   return (
     <main className="bg-[#FAFAFA] flex flex-col items-center font-inter">
@@ -14,11 +13,11 @@ export default function Landing() {
       <Home />
       <Investments />
       <Catches />
-      <footer className="w-full">
+      <footer>
         <div className="sm:hidden flex">
           <FooterMobile />
         </div>
-        <div className="sm:flex hidden ">
+        <div className="sm:flex hidden sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl items-center justify-around sm:justify-around lg:justify-between">
           <FooterDesktop />
         </div>
       </footer>
