@@ -6,6 +6,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { MdOutlineArrowRight } from "react-icons/md";
 
 import logo from "../assets/logo.svg";
+import FooterMobile from "../Footer/FooterMobile";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -13,9 +14,13 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="flex h-24 max-w-6xl m-auto lg:justify-between md:justify-around justify-around items-center z-10">
-        <Image src={logo} alt="Keter Capital logo" priority={true} />
-        <ul className="hidden sm:flex justify-between gap-10">
+      <nav
+        className={`${
+          open && "bg-[#FAFAFA]"
+        } absolute h-24 w-full sm:w-10/12 lg:w-7/12 flex items-center justify-around sm:justify-around lg:justify-between z-10`}
+      >
+        <Image src={logo} alt="Keter Capital logo" priority />
+        <ul className="hidden sm:flex justify-between gap-x-10">
           <li>
             <Link href="#about" className="hover:border-b-[1px] border-black">
               About
@@ -53,7 +58,7 @@ export default function NavBar() {
             className={
               !open
                 ? "hidden"
-                : "flex flex-col w-full h-5/6 absolute top-24 left-0 bg-[#FAFAFA]"
+                : "flex flex-col w-full h-screen absolute top-20 left-0 bg-[#FAFAFA]"
             }
           >
             <ul className="flex flex-col items-center uppercase text-[#242323]">
@@ -82,7 +87,9 @@ export default function NavBar() {
             <div className="flex sm:hidden p-1 mt-14 m-auto hover:border-b-[1px] border-black cursor-pointer">
               <Link href="">JOIN AS AN INVESTOR</Link>
             </div>
-            <h1 className="flex-end">HOla</h1>
+            <footer className="mb-20">
+              <FooterMobile />
+            </footer>
           </nav>
         }
       </nav>
