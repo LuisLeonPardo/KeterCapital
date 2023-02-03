@@ -1,6 +1,8 @@
 import React from "react";
+
 import Navbar from "./NavBar/NavBar";
-import Home from "./Home.jsx";
+import Home from "./Home";
+import Catches from "./Catches";
 import FooterDesktop from "./Footer/FooterDesktop";
 import FooterMobile from "./Footer/FooterMobile";
 
@@ -9,6 +11,7 @@ export default function Landing() {
     <main className="bg-[#FAFAFA] flex flex-col items-center font-inter">
       <Navbar />
       <Home />
+      <Catches />
       <footer className="w-full">
         <div className="sm:hidden flex">
           <FooterMobile />
