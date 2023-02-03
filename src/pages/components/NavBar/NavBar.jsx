@@ -16,10 +16,10 @@ export default function NavBar() {
     <>
       <nav
         className={`${
-          open ? "bg-[#FAFAFA]" : null
+          open && "bg-[#FAFAFA]"
         } absolute h-24 w-full sm:w-10/12 lg:w-7/12 flex items-center justify-around sm:justify-around lg:justify-between z-10`}
       >
-        <Image src={logo} alt="Keter Capital logo" priority={true} />
+        <Image src={logo} alt="Keter Capital logo" priority />
         <ul className="hidden sm:flex justify-between gap-x-10">
           <li>
             <Link href="#about" className="hover:border-b-[1px] border-black">
