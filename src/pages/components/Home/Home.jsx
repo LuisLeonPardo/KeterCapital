@@ -4,7 +4,7 @@ import image from "../assets/menInSuits.svg";
 
 export default function Home() {
   return (
-    <div className="sm:bg-none bg-men bg-cover max-w-screen flex flex-col-reverse sm:flex-row justify-center items-center sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl m-auto h-[760px] sm:h-[840px]">
+    <div className="sm:bg-none bg-men bg-cover max-w-screen flex flex-col-reverse sm:flex-row justify-center items-center sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl m-auto h-[820px] sm:h-[840px]">
       <div className="hidden sm:flex sm:w-1/2">
         <Image src={image} alt="meeting pic" />
       </div>
