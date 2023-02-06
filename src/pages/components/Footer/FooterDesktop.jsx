@@ -18,7 +18,7 @@ export default function FooterDesktop() {
         </div>
         <div className="w-52 h-28 flex flex-col gap-y-9 ">
           <h1 className="text-lg">Contacts:</h1>
-          <Link href="#" className=" text-sm">
+          <Link href="mailto:hello@keter.com" className=" text-sm">
             hello@keter.com
           </Link>
         </div>

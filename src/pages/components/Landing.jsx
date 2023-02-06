@@ -2,10 +2,9 @@ import React from "react";
 import Navbar from "./NavBar/NavBar";
 import Home from "./Home/Home.jsx";
 import Investments from "./Investments/Investments";
-import Catches from "./Catches";
+import Catches from "./Catches/Catches";
 import FooterDesktop from "./Footer/FooterDesktop";
 import FooterMobile from "./Footer/FooterMobile";
-
 
 export default function Landing() {
   return (
@@ -15,7 +14,7 @@ export default function Landing() {
       <Investments />
       <Catches />
       <footer className="w-full">
-        <div className="sm:hidden flex">
+        <div className="sm:hidden flex mt-2">
           <FooterMobile />
         </div>
         <div className="sm:flex hidden ">
