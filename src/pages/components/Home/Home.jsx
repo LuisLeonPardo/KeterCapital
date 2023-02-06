@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import image from "../assets/menInSuits.svg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
 
         <div className="pt-10 sm:pb-11 md:pb-10">
           <h3 className="font-normal text-xl uppercase underline pl-2 sm:mb-32 md:mb-28 sm:pl-8 cursor-pointer px-3">
-            Schedule a Meeting
+            <Link href="#">Schedule a Meeting</Link>
           </h3>
         </div>
       </div>
