@@ -83,7 +83,7 @@ export default function NavBar() {
                 : "flex flex-col w-full h-screen absolute top-20 left-0 bg-[#FAFAFA]"
             }
           >
-            <ul className="flex flex-col items-center uppercase text-[#242323]">
+            <ul className="flex flex-col items-center uppercase text-[#242323] mt-4">
               <Link
                 href="#about"
                 className="py-5 flex justify-between items-center border-y-[1px] border-black w-9/12 "
