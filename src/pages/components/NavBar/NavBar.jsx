@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -11,13 +11,35 @@ import FooterMobile from "../Footer/FooterMobile";
 export default function NavBar() {
   const [open, setOpen] = useState(false);
   const handleClick = () => setOpen(!open);
+  const [onTop, setOnTop] = useState(false);
+
+  const headerClass = () => {
+    if (window.pageYOffset < 260) {
+      setOnTop(true);
+    } else {
+      setOnTop(false);
+    }
+  };
+
+  useEffect(() => {
+    headerClass();
+    window.onscroll = function () {
+      headerClass();
+    };
+  }, []);
 
   return (
     <>
       <nav
-        className={`${
-          open && "bg-[#FAFAFA]"
-        } sm:bg-[#FAFAFA] fixed h-24 w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl flex items-center justify-around sm:justify-around lg:justify-between z-10`}
+        className={
+          onTop
+            ? `${
+                open && "bg-[#FAFAFA]"
+              } sm:bg-[#FAFAFA] fixed h-24 w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl flex items-center justify-around sm:justify-around lg:justify-between z-10`
+            : `${
+                open && "bg-[#FAFAFA]"
+              } backdrop-blur-2xl sm:bg-[#FAFAFA] fixed h-24 w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl flex items-center justify-around sm:justify-around lg:justify-between z-10`
+        }
       >
         <Image src={logo} alt="Keter Capital logo" priority />
         <ul className="hidden sm:flex justify-between gap-x-10">
