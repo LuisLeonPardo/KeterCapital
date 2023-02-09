@@ -11,7 +11,6 @@ export default function Home() {
           content="Keter Capital:`You dream it, we invest´"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.svg" />
       </Head>
       <>
         <Landing />
